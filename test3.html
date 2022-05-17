@@ -1,0 +1,22 @@
+<script>
+
+// filter 함수 변형
+function filter2(arrnum,excludes){
+		const result = [];
+
+		for(let i = 0; i < arrnum.length; i++){
+			let found = false;
+			for(let j = 0; j < excludes.length; j++){
+				if(excludes[j] === arrnum[i]){
+					found = true;
+					break;
+				}
+			}
+			if(!found) result.push(arrnum[i]);
+		}
+		return result;
+	}
+	const result3 = filter2([1,2,3,3,4,5],[3,2]);
+	console.log(result3);
+
+</script>
