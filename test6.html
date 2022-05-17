@@ -1,0 +1,16 @@
+<script>
+
+// 숫자 길이만큼 자르기
+	function chunck(arr, size){
+
+		const r = [];
+		for(let i = 0; i < arr.length; i+= size){
+			r.push(arr.slice(i, i + size));		
+	}
+	return r;
+}
+	chunck([1,2,3,4,5],2); // [[1,2],[3,4],[5]]
+	chunck([1,2,3,4,5],3); // [[1,2,3],[4,5]] 
+	console.log(chunck([1,2,3,4,5],2));
+	
+</script>
