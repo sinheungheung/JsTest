@@ -1,0 +1,14 @@
+<script>
+// sumAll 함수 작성
+	function sumAll(numbers){
+		let sum = 0;
+		for(let i = 0; i < numbers.length; i++ ){
+			sum += numbers[i];
+		}
+		return sum;
+	}
+	const r1 = sumAll([1,2,3]);
+	const r2 = sumAll([1,2,3,4,5]);
+	console.log(r1);
+	console.log(r2);
+</script>
