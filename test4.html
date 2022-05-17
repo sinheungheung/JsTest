@@ -1,0 +1,14 @@
+<script>
+
+// 좌표 이동하기
+	function move(p,x,y){
+		return{
+			x: p.x+x,
+			y: p.y+y
+		}
+	}
+	let p1 = {x: 0 , y: 2};
+	let p2 = move(p1, 3, 4);
+	console.log(p2); //{x: 3, y: 6}
+
+</script>
