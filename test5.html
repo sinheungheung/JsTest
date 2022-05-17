@@ -1,0 +1,15 @@
+<script>
+
+// key와 value 값 바꾸기
+	function swap(o){
+		const result = {};
+		for(const key in o){
+			alert(key + " : "+ o);
+		}
+		return result;
+	}
+	const o1 = {"a":"B","c":"D"}
+	const o2 = swap(o1);
+	console.log(o2);
+
+</script>
