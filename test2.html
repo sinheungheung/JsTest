@@ -1,0 +1,16 @@
+<script>
+
+// filter 함수 작성
+function filter(arr,target){
+		const result = [];
+
+		for(let i = 0; i < arr.length; i++){
+			if(arr[i] !== target) result.push(arr[i]);
+		}
+		return result;
+	}
+	const result1 = filter([1,2,3],2);
+	const result2 = filter([1,2,3,3,5],3);
+	console.log(result1,result2);
+	
+</script>
